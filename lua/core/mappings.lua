@@ -31,6 +31,10 @@ M.general = {
     ["<C-j>"] = { "<C-w>j", " window down" },
     ["<C-k>"] = { "<C-w>k", " window up" },
 
+
+    ["<S-j>"] = { "<C-d>zz", "move chunk down" },
+    ["<S-k>"] = { "<C-u>zz", "move chunk up" },
+
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "﬚  save file" },
 

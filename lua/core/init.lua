@@ -13,6 +13,14 @@ vim.cmd "autocmd filetype python nnoremap <F4> :w <bar> exec '!python3 '.shelles
 vim.cmd "autocmd filetype javascript nnoremap <F4> :w <bar> exec '!node '.shellescape('%')<CR>"
 vim.cmd "autocmd filetype cs nnoremap <F4> :w <bar> exec '!csc '.shellescape('%').' && mono '.shellescape(\"%:r\").'.exe'<CR>"
 
+vim.cmd 'nmap W !!grep -Po \"'
+vim.cmd 'vmap W !grep -Po \"'
+
+vim.cmd 'nmap E :s/'
+vim.cmd 'nmap E : s/'
+
+vim.cmd 'nmap R :read !'
+
 -- autocmds
 local autocmd = vim.api.nvim_create_autocmd
 local api = vim.api
